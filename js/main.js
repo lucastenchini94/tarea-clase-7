@@ -14,6 +14,9 @@ function validarNombre(nombre) {
     if(nombre.length >= 50){
         return "Este campo debe tener menos de 50 caracteres";
     }
+    if (!/^[a-z]+$/i.test(nombre)) {
+        return "el campo nombre solo acepta letras"
+    }
     
     return "";
 }
@@ -31,3 +34,4 @@ function validarDescripcionRegalo(descripcionRegalo) {
 
 
 }
+console.log(validarNombre(nombre))

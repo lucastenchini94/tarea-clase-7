@@ -11,6 +11,9 @@ function probarValidarNombre() {
       'Este campo debe tener menos de 50 caracteres',
       'Validar nombre no validó que el nombre sea menor a 50 caracteres',
   );
+  console.assert(
+    validarNombre(1234) === "el campo nombre solo acepta letras","validar nombre no valido que el campo solo tenga letras"
+  )
 }
 function probarValidarCiudad(){
 console.assert(
